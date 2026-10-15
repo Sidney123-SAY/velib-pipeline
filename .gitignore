@@ -1,0 +1,6 @@
+.venv/
+raw/
+staging/
+logs/
+*.duckdb
+__pycache__/
