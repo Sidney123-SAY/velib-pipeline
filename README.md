@@ -4,7 +4,7 @@ Capture l'état des stations Vélib' d'Île-de-France toutes les 15 minutes, arc
 réponses brutes, puis les transforme en un jeu de données interrogeable en SQL.
 
 **L'intérêt du projet tient en une phrase :** l'API Vélib' ne publie que l'instant présent.
-Personne ne sait combien il y avait de vélos à une station donnée hier à 8 h — cette
+Personne ne sait combien il y avait de vélos à une station donnée hier à 8 h cette
 information est écrasée en continu. Ce pipeline fabrique un historique qui n'existe
 nulle part ailleurs.
 
@@ -38,7 +38,7 @@ nulle part ailleurs.
 ```
 
 La couche `raw/` n'est jamais réécrite. Si une règle de nettoyage se révèle mauvaise,
-il suffit de corriger `transform.py` et de rejouer tout l'historique collecté — sans
+il suffit de corriger `transform.py` et de rejouer tout l'historique collecté sans
 rappeler l'API une seule fois.
 
 ---
@@ -83,7 +83,7 @@ schtasks /Create /TN "Velib ingest" /TR "C:\Users\Sidney\Documents\velib-pipelin
 ```
 
 Le fichier `run_ingest.bat` doit pointer vers le Python de l'environnement virtuel,
-et non vers le Python global — sinon les dépendances ne sont pas trouvées.
+et non vers le Python global sinon les dépendances ne sont pas trouvées.
 
 ---
 
@@ -123,7 +123,7 @@ une panne réelle doit s'arrêter bruyamment et apparaître dans le journal.
   au total annoncé. Les compteurs d'une API temps réel se désynchronisent ; l'écart sera
   quantifié avant de décider quelle valeur fait foi.
 - Les stations dont la dernière remontée date de plus de deux heures sont écartées à la
-  transformation. Ce seuil est un choix, pas une vérité — il reste à valider sur les
+  transformation. Ce seuil est un choix, pas une vérité il reste à valider sur les
   données réellement collectées.
 
 ---
