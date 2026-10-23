@@ -79,7 +79,7 @@ python ingest.py
 Pour automatiser la collecte toutes les 15 minutes :
 
 ```powershell
-schtasks /Create /TN "Velib ingest" /TR "<chemin complet>\run_ingest.bat" /SC MINUTE /MO 15 /ST 00:00
+schtasks /Create /TN "Velib ingest" /TR "C:\Users\Sidney\Documents\velib-pipeline\run_ingest.bat" /SC MINUTE /MO 15 /ST 00:00 /F
 ```
 
 Le fichier `run_ingest.bat` doit pointer vers le Python de l'environnement virtuel,
