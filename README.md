@@ -68,7 +68,7 @@ rappeler l'API une seule fois.
 ## Relancer le projet de zéro
 
 ```powershell
-git clone https://github.com/<ton-nom>/velib-pipeline.git
+git clone https://github.com/<Sidney123-SAY>/velib-pipeline.git
 cd velib-pipeline
 python -m venv .venv
 .venv\Scripts\activate
