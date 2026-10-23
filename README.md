@@ -46,10 +46,10 @@ rappeler l'API une seule fois.
 ## État d'avancement
 
 - [x] Ingestion planifiée en production depuis le 16 octobre 2026
-- [ ] Transformation vers Parquet
-- [ ] Chargement en entrepôt DuckDB
-- [ ] Contrôles qualité
-- [ ] Requêtes d'analyse
+- [X] Transformation vers Parquet
+- [X] Chargement en entrepôt DuckDB
+- [X] Contrôles qualité
+- [X] Requêtes d'analyse
 
 ---
 
